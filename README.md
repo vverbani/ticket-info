@@ -4,11 +4,11 @@ Designed to retrieve Zendesk ticket information from an organization then store 
 
 ## Additional Information About Zendesk
 
-By default Zendesk API is protected by authentication. There's a couple of different methods for exposing this API however, user and password combination and basic authentication. For the purpose of not exposing our passwords we'll be using the (API authentication)[https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token] token method.
+By default Zendesk API is protected by authentication. There's a couple of different methods for exposing this API however, user and password combination and basic authentication. For the purpose of not exposing our passwords we'll be using the [API authentication](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token) token method.
 
 After you generate your token, make this call in your terminal to base64 encode it:
 
-```bash
+```
 echo -n {your_Zendesk_email/token:{api_token}} | openssl base64
 ```
 
