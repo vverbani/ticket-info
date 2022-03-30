@@ -14,7 +14,6 @@ echo -n {your_Zendesk_email/token:{api_token}} | openssl base64
 
 The above is needed in order to use this project. In order for this project to use your token authentication, it passes this in the header as `Authorization: Basic {base64_email_token_combination}`.
 
-
 ## Getting Started
 
 1. Clone this Repo
