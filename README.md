@@ -20,8 +20,10 @@ The above is needed in order to use this project. In order for this project to u
 1. Clone this Repo
 2. Head over to this directory
 3. Create Zendesk API Key
-4. `docker-compose up`
-5. Visit http://localhost:{port} - where port is drawn from the docker-compose.yml file
+4. Base64 encode the key
+5. Upload it to the `.env` file
+6. `docker-compose up`
+7. Visit http://localhost:{port} - where port is drawn from the docker-compose.yml file
 
 ### Tech Stack
 
@@ -29,3 +31,6 @@ The above is needed in order to use this project. In order for this project to u
 2. SQL: Storing the retrieved information
 3. React/Next.js: Front end dashboard
 4. Docker/Docker-compose: Containerize each service and ready it with `docker-compose up`
+
+
+*** Ticket Info repository is not meant for production use as there's no form of security implemented for this. This is meant to be used locally for read only Zendesk ticket data. So please use at your own risk ***
