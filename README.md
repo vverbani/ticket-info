@@ -22,12 +22,12 @@ The above is needed in order to use this project. In order for this project to u
 4. Base64 encode the key
 5. Upload it to the `.env` file under `API_KEY`
 6. `docker-compose up`
-7. Visit http://localhost:8000
+7. Webapp http://localhost:3001 & API http:localhost:8000
 
 ### Tech Stack
 
 1. Python: Retrieving the information
-2. SQL: Storing the retrieved information
+2. PostgreSql: Storing the retrieved information
 3. React/Next.js: Front end dashboard
 4. Docker/Docker-compose: Containerize each service and ready it with `docker-compose up`
 

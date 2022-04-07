@@ -1,9 +1,10 @@
+# PYTHON FLASK API
 # syntax=docker/dockerfile:1
 FROM python:3.7-alpine
 
 # Set the working directory
-COPY . /src
-WORKDIR /src
+COPY . /api
+WORKDIR /api
 
 RUN apk add --no-cache gcc musl-dev linux-headers
 
@@ -16,3 +17,5 @@ EXPOSE 5000
 COPY . .
 
 CMD ["flask", "run"]
+
+# REACT

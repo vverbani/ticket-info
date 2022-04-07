@@ -1,3 +1,4 @@
 flask
 postgres
 python-dotenv
+requests

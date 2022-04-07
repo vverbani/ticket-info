@@ -8,16 +8,16 @@ services:
     environment:
       # TO-DO: Change these if using in production
       FLASK_ENV: development
-      FLASK_APP: ./src/app.py
+      FLASK_APP: ./api/app.py
       FLASK_RUN_HOST: 0.0.0.0
     volumes:
-      - .:/src
+      - .:/api
     env_file: .env
 
-  # postgres:
-  #   image: postgres
-  #   restart: always
-  #   environment:
-  #     # TO-DO: Change these if using in production
-  #     POSTGRES_PASSWORD: password
-  #     POSTGRES_DB: postgres
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      # TO-DO: Change these if using in production
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
