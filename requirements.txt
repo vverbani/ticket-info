@@ -1,4 +1,6 @@
 flask
-postgres
 python-dotenv
 requests
+postgres
+flask_sqlalchemy
+psycopg2-binary
