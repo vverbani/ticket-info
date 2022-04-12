@@ -6,17 +6,17 @@ services:
     ports:
       - "8000:5000"
     environment:
-      # TO-DO: Change these if using in production
-      FLASK_ENV: development
-      FLASK_APP: ./api/app.py
-      FLASK_RUN_HOST: 0.0.0.0
+      FLASK_ENV: ${FLASK_ENV}
+      FLASK_APP: ${FLASK_APP}
+      FLASK_RUN_HOST: ${FLASK_RUN_HOST}
     volumes:
       - .:/api
-    env_file: .env
 
   postgres:
     image: postgres
     restart: always
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_DB}
