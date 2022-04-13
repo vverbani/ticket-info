@@ -11,9 +11,10 @@ services:
       FLASK_RUN_HOST: ${FLASK_RUN_HOST}
     volumes:
       - .:/api
+      - ./migrations:/api/migrations
 
   postgres:
-    image: postgres
+    image: postgres:latest
     restart: always
     ports:
       - "5432:5432"
@@ -21,3 +22,5 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data

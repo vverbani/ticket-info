@@ -1,5 +1,5 @@
-info.json
-.env
+# Postgres
+postgres-data
 
 # Byte-compiled / optimized / DLL files
 /src/__pycache__/
